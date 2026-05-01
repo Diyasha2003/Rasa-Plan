@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RasaPlan | රිස බාසි | The Broke Student Meal Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Sans+Sinhala:wght@400;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── CUSTOM CURSOR ── -->
+  <div class="cursor" id="cursor">🥄</div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ── PARTICLE CANVAS ── -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 1 — HERO (Split Gold / Navy)
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Left: Gold panel -->
+    <div class="hero-left">
+      <div class="hl-inner">
+        <span class="brand-badge" id="badge">🍛 AI · LangChain · Sri Lanka</span>
+        <h1 class="hero-title" id="hero-title">Rasa<br>Plan</h1>
+        <p class="hero-si" id="hero-si">රස&nbsp;Plan</p>
+        <p class="hero-sub" id="hero-sub">
+          Smart Sri Lankan meals.<br>
+          Your budget. Your taste.<br>
+          <em>Rasai, beli, and healthy!</em>
+        </p>
+        <a class="cta-btn" id="cta" href="#planner">
+          <span>🍽️ Plan My Week</span>
+          <span class="cta-arrow">→</span>
+        </a>
+        <!-- Floating food 3D items -->
+        <div class="food-orb" id="orb1">🍛</div>
+        <div class="food-orb" id="orb2">🥥</div>
+        <div class="food-orb" id="orb3">🫘</div>
+      </div>
+    </div>
+
+    <!-- Right: Navy panel -->
+    <div class="hero-right">
+      <div class="hr-inner">
+        <div class="food-orb-r" id="orb4">🌶️</div>
+        <div class="food-orb-r" id="orb5">🍜</div>
+        <div class="food-orb-r" id="orb6">🧄</div>
+        <h2 class="right-heading" id="rh">
+          Eat Well.<br>
+          <span>Spend Less.</span><br>
+          Live Better.
+        </h2>
+        <div class="right-stats" id="stats">
+          <div class="stat"><span class="sn" data-target="50">0</span><span class="sl">Recipes</span></div>
+          <div class="stat"><span class="sn">500</span><span class="sl">Min LKR/week</span></div>
+          <div class="stat"><span class="sn">7</span><span class="sl">Days Planned</span></div>
+        </div>
+        <div class="tech-stack" id="tech">
+          <span>LangChain</span><span>GPT-4o</span><span>Streamlit</span><span>Python</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave separator -->
+  <div class="wave-sep wave-down">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path d="M0,45 C240,90 480,0 720,45 C960,90 1200,0 1440,45 L1440,0 L0,0Z" fill="#1C2C6B"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 2 — CATEGORY NAV
+  ══════════════════════════════════════════ -->
+  <section class="cat-nav-section">
+    <p class="section-script">Product Categories</p>
+    <h2 class="section-title reveal-up">Food Categories</h2>
+    <nav class="cat-nav">
+      <div class="cat-item reveal-up" style="--d:0.0s"><div class="cat-circle">🍚</div><span>Rice Dishes</span></div>
+      <div class="cat-item reveal-up" style="--d:0.08s"><div class="cat-circle">🫘</div><span>Curries</span></div>
+      <div class="cat-item reveal-up" style="--d:0.16s"><div class="cat-circle">🍜</div><span>Hoppers</span></div>
+      <div class="cat-item reveal-up" style="--d:0.24s"><div class="cat-circle">🥚</div><span>Egg Dishes</span></div>
+      <div class="cat-item reveal-up" style="--d:0.32s"><div class="cat-circle">🐟</div><span>Seafood</span></div>
+      <div class="cat-item reveal-up" style="--d:0.40s"><div class="cat-circle">🥬</div><span>Vegetables</span></div>
+      <div class="cat-item reveal-up" style="--d:0.48s"><div class="cat-circle active-cat">🧃</div><span>Short Eats</span></div>
+    </nav>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 3 — HOT RECOMMEND (Meal Cards)
+  ══════════════════════════════════════════ -->
+  <section class="hot-section">
+    <p class="section-script">Hot Recommend</p>
+    <h2 class="section-title reveal-up"> Budget Favourites</h2>
+    <div class="meal-grid">
+
+      <!-- Card 1 -->
+      <div class="meal-card reveal-up" style="--d:0.0s">
+        <div class="card-front">
+          <div class="card-top gold-bg">
+            <div class="steam-wrap"><div class="steam"></div><div class="steam"></div><div class="steam"></div></div>
+            <span class="card-emoji">🫓</span>
+          </div>
+          <div class="card-info">
+            <h3>Pol Roti</h3>
+            <p class="card-si">පොල් රොටී</p>
+            <div class="card-meta">
+              <span class="price">LKR 28<small>/serving</small></span>
+              <span class="time">⏱ 20 min</span>
+            </div>
+            <span class="hover-hint">Hover for recipe →</span>
+          </div>
+        </div>
+        <div class="card-back">
+          <h4>📝 Quick Recipe</h4>
+          <ol>
+            <li>Mix flour, grated coconut, chilli &amp; onion</li>
+            <li>Add water — make firm dough</li>
+            <li>Flatten and cook on pan 4 min each side</li>
+            <li>Serve with pol sambol 🥥</li>
+          </ol>
+          <div class="back-meta"><span>🥬 Vegan</span><span>🌾 Beginner</span></div>
+        </div>
+      </div>
+
+      <!-- Card 2 (featured / big) -->
+      <div class="meal-card card-featured reveal-up" style="--d:0.1s">
+        <div class="card-front">
+          <div class="card-top navy-bg">
+            <div class="featured-badge">⭐ Most Popular</div>
+            <div class="steam-wrap"><div class="steam"></div><div class="steam"></div><div class="steam"></div></div>
+            <span class="card-emoji big-emoji">🫘</span>
+          </div>
+          <div class="card-info">
+            <h3>Dhal Curry</h3>
+            <p class="card-si">පරිප්පු කරිය</p>
+            <div class="card-meta">
+              <span class="price">LKR 27<small>/serving</small></span>
+              <span class="time">⏱ 25 min</span>
+            </div>
+            <div class="nutrition-bar">
+              <span>Protein</span>
+              <div class="bar"><div class="bar-fill" style="width:72%;background:#F5C842"></div></div>
+              <span>Calories</span>
+              <div class="bar"><div class="bar-fill" style="width:55%;background:#1C2C6B"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-back">
+          <h4>📝 Quick Recipe</h4>
+          <ol>
+            <li>Boil dhal with turmeric &amp; pandan</li>
+            <li>Fry onion, garlic, curry powder</li>
+            <li>Mix in boiled dhal</li>
+            <li>Add coconut milk, simmer 5 min</li>
+          </ol>
+          <div class="back-meta"><span>🥬 Vegetarian</span><span>💪 Protein-rich</span></div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="meal-card reveal-up" style="--d:0.2s">
+        <div class="card-front">
+          <div class="card-top teal-bg">
+            <div class="steam-wrap"><div class="steam"></div><div class="steam"></div><div class="steam"></div></div>
+            <span class="card-emoji">🍛</span>
+          </div>
+          <div class="card-info">
+            <h3>Rice &amp; Curry</h3>
+            <p class="card-si">බත් සහ කරිය</p>
+            <div class="card-meta">
+              <span class="price">LKR 60<small>/serving</small></span>
+              <span class="time">⏱ 40 min</span>
+            </div>
+            <span class="hover-hint">Hover for recipe →</span>
+          </div>
+        </div>
+        <div class="card-back">
+          <h4>📝 Quick Recipe</h4>
+          <ol>
+            <li>Cook samba rice 1:1.5 water</li>
+            <li>Prepare dhal &amp; vegetable sides</li>
+            <li>Make pol sambol</li>
+            <li>Serve with all curries 🍛</li>
+          </ol>
+          <div class="back-meta"><span>🍚 Complete Meal</span><span>⚡ Filling</span></div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="meal-card reveal-up" style="--d:0.3s">
+        <div class="card-front">
+          <div class="card-top gold-bg">
+            <div class="steam-wrap"><div class="steam"></div><div class="steam"></div><div class="steam"></div></div>
+            <span class="card-emoji">🥚</span>
+          </div>
+          <div class="card-info">
+            <h3>Egg Roti</h3>
+            <p class="card-si">බිත්තර රොටී</p>
+            <div class="card-meta">
+              <span class="price">LKR 45<small>/serving</small></span>
+              <span class="time">⏱ 20 min</span>
+            </div>
+            <span class="hover-hint">Hover for recipe →</span>
+          </div>
+        </div>
+        <div class="card-back">
+          <h4>📝 Quick Recipe</h4>
+          <ol>
+            <li>Make thin flour roti on griddle</li>
+            <li>Crack egg on top &amp; spread</li>
+            <li>Add onion &amp; chilli</li>
+            <li>Fold &amp; cook until done</li>
+          </ol>
+          <div class="back-meta"><span>🥚 Protein</span><span>⚡ Quick</span></div>
+        </div>
+      </div>
+
+    </div>
+    <a class="view-more-btn reveal-up" href="#planner">View Full Plan →</a>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 4 — FRESH & DELICIOUS
+  ══════════════════════════════════════════ -->
+  <section class="fresh-section">
+    <div class="fresh-bg-text">Fresh &amp; Delicious</div>
+    <div class="fresh-grid">
+      <div class="fresh-left reveal-left">
+        <p class="section-script" style="text-align:left">Fresh &amp; Delicious</p>
+        <h2 class="fresh-title">
+          Food Safety.<br>
+          <span>Real Ingredients.</span><br>
+          AI Precision.
+        </h2>
+        <p class="fresh-body">
+          RasaPlan plans meals using real 2025 LKR prices from Keells, Arpico, Cargills 
+          and local Pola markets. Every plan is optimised for nutrition, budget and 
+          Sri Lankan taste preferences — powered by LangChain ReAct and GPT-4o.
+        </p>
+        <div class="cert-row">
+          <div class="cert-badge">🤖<br><small>LangChain</small></div>
+          <div class="cert-badge">🧠<br><small>GPT-4o</small></div>
+          <div class="cert-badge">🐍<br><small>Python</small></div>
+          <div class="cert-badge">📊<br><small>Real Prices</small></div>
+        </div>
+      </div>
+      <div class="fresh-right reveal-right">
+        <div class="fresh-bowl" id="bowl">🍲</div>
+        <div class="floating-ingr" style="top:10%;left:10%;animation-delay:0s">🌶️</div>
+        <div class="floating-ingr" style="top:20%;right:5%;animation-delay:0.5s">🥥</div>
+        <div class="floating-ingr" style="bottom:20%;left:5%;animation-delay:1s">🧄</div>
+        <div class="floating-ingr" style="bottom:10%;right:15%;animation-delay:1.5s">🫘</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION 5 — PLANNER (Interactive)
+  ══════════════════════════════════════════ -->
+  <section class="planner-section" id="planner">
+    <div class="planner-inner">
+      <p class="section-script" style="color:#F5C842">AI Planner</p>
+      <h2 class="section-title reveal-up" style="color:#fff">Build Your Week</h2>
+
+      <!-- Step tabs -->
+      <div class="step-tabs reveal-up">
+        <div class="step-tab active" data-step="1">1. Budget</div>
+        <div class="step-tab" data-step="2">2. Diet</div>
+        <div class="step-tab" data-step="3">3. Skills</div>
+        <div class="step-tab" data-step="4">4. Results</div>
+      </div>
+
+      <!-- Step 1: Budget -->
+      <div class="step-panel active" id="step1">
+        <h3 class="step-heading">💰 Set Your Weekly Budget</h3>
+        <div class="budget-display">
+          <span class="lkr-sym">LKR</span>
+          <span class="budget-num" id="budget-display">2,000</span>
+          <span class="per-week">/ week</span>
+        </div>
+        <input type="range" class="budget-slider" id="budget-slider"
+               min="500" max="10000" step="100" value="2000"/>
+        <div class="budget-tier" id="budget-tier">
+          🟡 Budget Tier: Good budget — rice, eggs, canned fish, basic curries
+        </div>
+        <div class="budget-coins" id="budget-coins">
+          <span class="coin" id="c1">🪙</span>
+          <span class="coin" id="c2">🪙</span>
+          <span class="coin" id="c3">🪙</span>
+          <span class="coin" id="c4">🟡</span>
+          <span class="coin" id="c5">🟡</span>
+        </div>
+        <button class="next-btn" onclick="goStep(2)">Next → Choose Diet</button>
+      </div>
+
+      <!-- Step 2: Diet -->
+      <div class="step-panel" id="step2">
+        <h3 class="step-heading">🥗 Dietary Preference</h3>
+        <div class="diet-grid">
+          <div class="diet-card" onclick="selectDiet(this,'vegetarian')">
+            <span class="diet-emoji">🥬</span>
+            <strong>Vegetarian</strong>
+            <small>No meat/seafood</small>
+          </div>
+          <div class="diet-card selected" onclick="selectDiet(this,'non-vegetarian')">
+            <span class="diet-emoji">🍗</span>
+            <strong>Non-Vegetarian</strong>
+            <small>Includes chicken &amp; fish</small>
+          </div>
+          <div class="diet-card" onclick="selectDiet(this,'vegan')">
+            <span class="diet-emoji">🌱</span>
+            <strong>Vegan</strong>
+            <small>No animal products</small>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="back-btn" onclick="goStep(1)">← Back</button>
+          <button class="next-btn" onclick="goStep(3)">Next → Skill Level</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Skill + Store -->
+      <div class="step-panel" id="step3">
+        <h3 class="step-heading">👨‍🍳 Cooking Skill &amp; Store</h3>
+        <div class="skill-grid">
+          <div class="skill-card selected" onclick="selectSkill(this,'beginner')">
+            <span>🌱</span>
+            <strong>Beginner</strong>
+            <small>Simple recipes, &lt; 30 min</small>
+          </div>
+          <div class="skill-card" onclick="selectSkill(this,'intermediate')">
+            <span>⭐</span>
+            <strong>Intermediate</strong>
+            <small>More variety &amp; techniques</small>
+          </div>
+        </div>
+        <div class="store-select-wrap">
+          <label>🛒 Nearest Store</label>
+          <div class="store-grid">
+            <div class="store-btn selected-store" onclick="selectStore(this,'Keells')">Keells</div>
+            <div class="store-btn" onclick="selectStore(this,'Arpico')">Arpico</div>
+            <div class="store-btn" onclick="selectStore(this,'Cargills')">Cargills</div>
+            <div class="store-btn" onclick="selectStore(this,'Pola Market')">Pola Market</div>
+          </div>
+        </div>
+        <div class="step-nav">
+          <button class="back-btn" onclick="goStep(2)">← Back</button>
+          <button class="next-btn" onclick="generatePlan()">🍛 Generate My Plan!</button>
+        </div>
+      </div>
+
+      <!-- Step 4: Results -->
+      <div class="step-panel" id="step4">
+        <h3 class="step-heading" style="color:#F5C842">✅ Your 7-Day Meal Plan</h3>
+        <div class="profile-card-mini" id="profile-summary"></div>
+        <div class="week-grid" id="week-grid"></div>
+        <div class="shopping-list-section" id="shopping-section"></div>
+        <div class="chat-section">
+          <h4 style="color:#F5C842;margin-bottom:1rem">💬 Ask RasaPlan to adjust your plan</h4>
+          <div class="chat-box" id="chat-box">
+            <div class="chat-msg ai">
+              <span class="ai-label">🍛 RASAPLAN</span>
+              Your plan is ready! Ask me to swap a meal, show a recipe, check your budget, or build your shopping list.
+            </div>
+          </div>
+          <div class="chat-input-row">
+            <input type="text" id="chat-input" class="chat-input"
+                   placeholder="e.g. Swap Tuesday dinner, show Pol Roti recipe..."
+                   onkeydown="if(event.key==='Enter') sendChat()"/>
+            <button class="send-btn" onclick="sendChat()">Send 🍽️</button>
+          </div>
+          <div class="quick-btns">
+            <button onclick="quickChat('Show me the shopping list')">🛒 Shopping List</button>
+            <button onclick="quickChat('Swap Wednesday lunch')">🔄 Swap Meal</button>
+            <button onclick="quickChat('Check if I am within budget')">💰 Budget Check</button>
+            <button onclick="quickChat('Show Pol Roti recipe')">📝 Recipe</button>
+          </div>
+        </div>
+        <button class="back-btn" style="margin-top:2rem" onclick="goStep(1)">🔄 Start Over</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-logo">🍛 RasaPlan | රස Plan</div>
+    <p>Built for <strong>LB3114 Data Science Applications &amp; AI</strong> · KDU · Intake 41</p>
+    <p>Powered by LangChain · GPT-4o · Streamlit · Real Sri Lankan LKR Prices</p>
+  </footer>
+
+  <script src="animations.js"></script>
+</body>
+</html>
