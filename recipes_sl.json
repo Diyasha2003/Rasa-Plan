@@ -1,0 +1,279 @@
+{
+  "recipes": [
+    {
+      "id": "pol_roti",
+      "name": "Pol Roti",
+      "name_si": "පොල් රොටී",
+      "category": "breakfast",
+      "cost_lkr": 55,
+      "servings": 2,
+      "time_min": 20,
+      "difficulty": "beginner",
+      "diet": ["vegetarian", "vegan"],
+      "calories": 280,
+      "ingredients": [
+        {"item": "Wheat Flour", "quantity": "200g", "cost": 32},
+        {"item": "Coconut", "quantity": "1/2 piece (grated)", "cost": 50},
+        {"item": "Green Chilli", "quantity": "2 pieces", "cost": 10},
+        {"item": "Onion", "quantity": "1 small", "cost": 20},
+        {"item": "Salt", "quantity": "pinch", "cost": 3}
+      ],
+      "steps": [
+        "Mix flour, grated coconut, diced onion, chopped chilli and salt.",
+        "Add just enough water to make a firm dough.",
+        "Divide into balls, flatten on a greased pan.",
+        "Cook on medium heat 3-4 min each side until golden brown.",
+        "Serve hot with coconut sambol or lunu miris."
+      ],
+      "tags": ["quick", "cheap", "filling", "breakfast"],
+      "emoji": "🫓"
+    },
+    {
+      "id": "dhal_curry",
+      "name": "Dhal Curry",
+      "name_si": "පරිප්පු කරිය",
+      "category": "lunch",
+      "cost_lkr": 80,
+      "servings": 3,
+      "time_min": 25,
+      "difficulty": "beginner",
+      "diet": ["vegetarian", "vegan"],
+      "calories": 220,
+      "ingredients": [
+        {"item": "Red Lentils (Dhal)", "quantity": "250g", "cost": 83},
+        {"item": "Onion", "quantity": "1 medium", "cost": 25},
+        {"item": "Garlic", "quantity": "3 cloves", "cost": 20},
+        {"item": "Turmeric Powder", "quantity": "1 tsp", "cost": 5},
+        {"item": "Curry Powder", "quantity": "1 tbsp", "cost": 10},
+        {"item": "Coconut Milk (tin)", "quantity": "100ml", "cost": 55},
+        {"item": "Pandan Leaves", "quantity": "2 leaves", "cost": 5}
+      ],
+      "steps": [
+        "Wash dhal and boil with turmeric and pandan leaves until soft.",
+        "Fry onions and garlic in coconut oil until golden.",
+        "Add curry powder and stir 1 minute.",
+        "Add boiled dhal and mix well.",
+        "Pour in coconut milk and simmer 5 minutes. Season with salt."
+      ],
+      "tags": ["protein-rich", "cheap", "filling", "lunch"],
+      "emoji": "🫘"
+    },
+    {
+      "id": "coconut_sambol",
+      "name": "Pol Sambol",
+      "name_si": "පොල් සම්බෝල",
+      "category": "side",
+      "cost_lkr": 35,
+      "servings": 4,
+      "time_min": 10,
+      "difficulty": "beginner",
+      "diet": ["vegetarian", "vegan"],
+      "calories": 95,
+      "ingredients": [
+        {"item": "Coconut", "quantity": "1/2 piece (grated)", "cost": 50},
+        {"item": "Red Onion", "quantity": "2 small", "cost": 30},
+        {"item": "Chilli Powder", "quantity": "1 tbsp", "cost": 8},
+        {"item": "Maldive Fish (Umbalakada)", "quantity": "1 tsp (optional)", "cost": 15},
+        {"item": "Lime juice", "quantity": "1/2 lime", "cost": 10}
+      ],
+      "steps": [
+        "Combine freshly grated coconut with chopped red onion.",
+        "Add chilli powder, salt and umbalakada (optional for vegan).",
+        "Squeeze lime juice and mix well by hand.",
+        "Taste and adjust salt and chilli. Serve immediately."
+      ],
+      "tags": ["side", "quick", "vegan", "condiment"],
+      "emoji": "🥥"
+    },
+    {
+      "id": "rice_and_curry",
+      "name": "Rice & Curry",
+      "name_si": "බත් සහ කරිය",
+      "category": "lunch",
+      "cost_lkr": 120,
+      "servings": 2,
+      "time_min": 40,
+      "difficulty": "beginner",
+      "diet": ["vegetarian"],
+      "calories": 520,
+      "ingredients": [
+        {"item": "Rice (Samba)", "quantity": "300g", "cost": 71},
+        {"item": "Red Lentils (Dhal)", "quantity": "150g", "cost": 50},
+        {"item": "Brinjal (Wambatu)", "quantity": "250g", "cost": 45},
+        {"item": "Carrot", "quantity": "200g", "cost": 48},
+        {"item": "Coconut", "quantity": "1/2 grated", "cost": 50}
+      ],
+      "steps": [
+        "Cook rice with 1.5x water ratio.",
+        "Prepare dhal curry as separate recipe.",
+        "Fry brinjal slices in coconut oil until golden.",
+        "Stir fry carrot with curry powder and temper.",
+        "Serve rice with all sides and pol sambol."
+      ],
+      "tags": ["complete meal", "lunch", "filling"],
+      "emoji": "🍛"
+    },
+    {
+      "id": "egg_roti",
+      "name": "Egg Roti",
+      "name_si": "බිත්තර රොටී",
+      "category": "dinner",
+      "cost_lkr": 90,
+      "servings": 2,
+      "time_min": 20,
+      "difficulty": "beginner",
+      "diet": ["vegetarian"],
+      "calories": 340,
+      "ingredients": [
+        {"item": "Wheat Flour", "quantity": "200g", "cost": 32},
+        {"item": "Eggs", "quantity": "2 eggs", "cost": 60},
+        {"item": "Onion", "quantity": "1 small", "cost": 20},
+        {"item": "Green Chilli", "quantity": "2 pieces", "cost": 10}
+      ],
+      "steps": [
+        "Make a soft dough with flour, salt and water.",
+        "Roll out thin circles on oiled surface.",
+        "Cook on griddle, crack egg on top, spread with fork.",
+        "Add chopped onion and chilli on egg.",
+        "Fold roti over the egg and cook until done."
+      ],
+      "tags": ["quick", "protein", "dinner", "popular"],
+      "emoji": "🥚"
+    },
+    {
+      "id": "gotukola_salad",
+      "name": "Gotukola Sambol",
+      "name_si": "ගොටුකොළ සම්බෝල",
+      "category": "side",
+      "cost_lkr": 40,
+      "servings": 3,
+      "time_min": 10,
+      "difficulty": "beginner",
+      "diet": ["vegetarian", "vegan"],
+      "calories": 45,
+      "ingredients": [
+        {"item": "Gotukola", "quantity": "1 bunch", "cost": 40},
+        {"item": "Coconut", "quantity": "1/4 grated", "cost": 25},
+        {"item": "Onion", "quantity": "1 small", "cost": 15},
+        {"item": "Green Chilli", "quantity": "1 piece", "cost": 5}
+      ],
+      "steps": [
+        "Finely chop gotukola leaves.",
+        "Mix with grated coconut, diced onion and chilli.",
+        "Add lime juice and salt to taste.",
+        "Serve fresh as a nutritious side."
+      ],
+      "tags": ["healthy", "nutritious", "cheap", "side"],
+      "emoji": "🥬"
+    },
+    {
+      "id": "string_hoppers",
+      "name": "String Hoppers",
+      "name_si": "ඉඳිඅප්පම්",
+      "category": "breakfast",
+      "cost_lkr": 70,
+      "servings": 2,
+      "time_min": 30,
+      "difficulty": "intermediate",
+      "diet": ["vegetarian", "vegan"],
+      "calories": 250,
+      "ingredients": [
+        {"item": "String Hoppers (flour)", "quantity": "250g", "cost": 65},
+        {"item": "Coconut Milk (tin)", "quantity": "100ml", "cost": 55},
+        {"item": "Salt", "quantity": "pinch", "cost": 2}
+      ],
+      "steps": [
+        "Mix flour with hot water and salt to make soft dough.",
+        "Press through string hopper mould onto steaming plates.",
+        "Steam for 5-7 minutes until cooked.",
+        "Serve with dhal curry and pol sambol."
+      ],
+      "tags": ["breakfast", "traditional", "popular"],
+      "emoji": "🍜"
+    },
+    {
+      "id": "wambatu_moju",
+      "name": "Wambatu Moju (Brinjal Pickle)",
+      "name_si": "වම්බටු මෝජු",
+      "category": "side",
+      "cost_lkr": 60,
+      "servings": 4,
+      "time_min": 25,
+      "difficulty": "beginner",
+      "diet": ["vegetarian", "vegan"],
+      "calories": 120,
+      "ingredients": [
+        {"item": "Brinjal (Wambatu)", "quantity": "500g", "cost": 90},
+        {"item": "Onion", "quantity": "2 medium", "cost": 50},
+        {"item": "Green Chilli", "quantity": "4 pieces", "cost": 20},
+        {"item": "Sugar", "quantity": "2 tbsp", "cost": 15},
+        {"item": "Turmeric Powder", "quantity": "1 tsp", "cost": 5}
+      ],
+      "steps": [
+        "Cut brinjal into sticks, coat with turmeric and salt.",
+        "Deep fry until golden. Drain on paper.",
+        "Fry onions and chilli until caramelised.",
+        "Add sugar and vinegar, stir to combine.",
+        "Mix in fried brinjal. Serve at room temp."
+      ],
+      "tags": ["side", "pickle", "sweet-sour"],
+      "emoji": "🍆"
+    },
+    {
+      "id": "mackerel_curry",
+      "name": "Tinned Mackerel Curry",
+      "name_si": "මැකරල් කරිය",
+      "category": "lunch",
+      "cost_lkr": 110,
+      "servings": 3,
+      "time_min": 20,
+      "difficulty": "beginner",
+      "diet": ["non-vegetarian"],
+      "calories": 280,
+      "ingredients": [
+        {"item": "Canned Mackerel", "quantity": "1 tin", "cost": 200},
+        {"item": "Coconut Milk (tin)", "quantity": "100ml", "cost": 55},
+        {"item": "Onion", "quantity": "1 medium", "cost": 25},
+        {"item": "Tomato", "quantity": "2 medium", "cost": 50},
+        {"item": "Curry Powder", "quantity": "1 tbsp", "cost": 10}
+      ],
+      "steps": [
+        "Fry onions until golden. Add curry powder and tomatoes.",
+        "Cook tomatoes until mushy.",
+        "Add drained mackerel and gently fold in.",
+        "Pour coconut milk, simmer 5 minutes.",
+        "Season and serve with rice."
+      ],
+      "tags": ["protein", "quick", "non-veg", "lunch"],
+      "emoji": "🐟"
+    },
+    {
+      "id": "instant_noodle_upgrade",
+      "name": "Sri Lankan Spicy Noodles",
+      "name_si": "ස්පයිසි නූඩල්ස්",
+      "category": "dinner",
+      "cost_lkr": 120,
+      "servings": 1,
+      "time_min": 15,
+      "difficulty": "beginner",
+      "diet": ["vegetarian"],
+      "calories": 380,
+      "ingredients": [
+        {"item": "Instant Noodles (Maggi)", "quantity": "2 packs", "cost": 180},
+        {"item": "Eggs", "quantity": "1 egg", "cost": 30},
+        {"item": "Leeks", "quantity": "handful", "cost": 20},
+        {"item": "Onion", "quantity": "1 small", "cost": 15},
+        {"item": "Chilli Powder", "quantity": "1 tsp", "cost": 5}
+      ],
+      "steps": [
+        "Cook noodles per packet, drain and set aside.",
+        "Fry onion until soft in coconut oil.",
+        "Add leeks, chilli powder and stir fry.",
+        "Crack in egg and scramble with veggies.",
+        "Toss noodles in, add soy sauce and mix well."
+      ],
+      "tags": ["quick", "student", "dinner", "cheap"],
+      "emoji": "🍜"
+    }
+  ]
+}

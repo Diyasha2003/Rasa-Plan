@@ -1,0 +1,59 @@
+{
+  "staples": [
+    {"name": "Rice (Samba)", "unit": "1kg", "price_lkr": 235, "category": "staples", "emoji": "🍚"},
+    {"name": "Rice (Nadu)", "unit": "1kg", "price_lkr": 190, "category": "staples", "emoji": "🍚"},
+    {"name": "Red Lentils (Dhal)", "unit": "500g", "price_lkr": 165, "category": "staples", "emoji": "🫘"},
+    {"name": "Coconut", "unit": "1 piece", "price_lkr": 100, "category": "staples", "emoji": "🥥"},
+    {"name": "Coconut Milk (tin)", "unit": "400ml", "price_lkr": 215, "category": "staples", "emoji": "🥥"},
+    {"name": "Bread Loaf", "unit": "1 loaf", "price_lkr": 110, "category": "staples", "emoji": "🍞"},
+    {"name": "Wheat Flour", "unit": "1kg", "price_lkr": 160, "category": "staples", "emoji": "🌾"},
+    {"name": "String Hoppers (flour)", "unit": "500g", "price_lkr": 130, "category": "staples", "emoji": "🍜"},
+    {"name": "Vermicelli", "unit": "500g", "price_lkr": 150, "category": "staples", "emoji": "🍝"}
+  ],
+  "vegetables": [
+    {"name": "Gotukola", "unit": "bunch", "price_lkr": 40, "category": "vegetables", "emoji": "🥬"},
+    {"name": "Mukunuwenna", "unit": "bunch", "price_lkr": 35, "category": "vegetables", "emoji": "🥬"},
+    {"name": "Brinjal (Wambatu)", "unit": "500g", "price_lkr": 90, "category": "vegetables", "emoji": "🍆"},
+    {"name": "Leeks", "unit": "500g", "price_lkr": 120, "category": "vegetables", "emoji": "🌿"},
+    {"name": "Green Beans", "unit": "500g", "price_lkr": 140, "category": "vegetables", "emoji": "🫛"},
+    {"name": "Carrot", "unit": "500g", "price_lkr": 120, "category": "vegetables", "emoji": "🥕"},
+    {"name": "Pumpkin (Wattakka)", "unit": "500g", "price_lkr": 60, "category": "vegetables", "emoji": "🎃"},
+    {"name": "Tomato", "unit": "500g", "price_lkr": 120, "category": "vegetables", "emoji": "🍅"},
+    {"name": "Onion", "unit": "1kg", "price_lkr": 240, "category": "vegetables", "emoji": "🧅"},
+    {"name": "Garlic", "unit": "100g", "price_lkr": 175, "category": "vegetables", "emoji": "🧄"},
+    {"name": "Green Chilli", "unit": "100g", "price_lkr": 60, "category": "vegetables", "emoji": "🌶️"},
+    {"name": "Drumstick (Murunga)", "unit": "bundle", "price_lkr": 60, "category": "vegetables", "emoji": "🌿"},
+    {"name": "Bitter Gourd (Karawila)", "unit": "500g", "price_lkr": 80, "category": "vegetables", "emoji": "🥒"},
+    {"name": "Ash Plantain (Alu Kesel)", "unit": "1 bunch", "price_lkr": 80, "category": "vegetables", "emoji": "🍌"},
+    {"name": "Banana (Embul)", "unit": "1 bunch", "price_lkr": 100, "category": "vegetables", "emoji": "🍌"}
+  ],
+  "protein": [
+    {"name": "Eggs", "unit": "10 pack", "price_lkr": 300, "category": "protein", "emoji": "🥚"},
+    {"name": "Canned Mackerel", "unit": "1 tin (425g)", "price_lkr": 200, "category": "protein", "emoji": "🐟"},
+    {"name": "Dried Fish (Karawala)", "unit": "100g", "price_lkr": 250, "category": "protein", "emoji": "🐠"},
+    {"name": "Chicken (pieces)", "unit": "1kg", "price_lkr": 680, "category": "protein", "emoji": "🍗"},
+    {"name": "Chicken Breast", "unit": "500g", "price_lkr": 450, "category": "protein", "emoji": "🍗"},
+    {"name": "Canned Sardines", "unit": "1 tin", "price_lkr": 160, "category": "protein", "emoji": "🐟"},
+    {"name": "Black-Eyed Peas", "unit": "500g", "price_lkr": 140, "category": "protein", "emoji": "🫘"},
+    {"name": "Chickpeas", "unit": "500g", "price_lkr": 150, "category": "protein", "emoji": "🫘"}
+  ],
+  "spices_condiments": [
+    {"name": "Coconut Oil", "unit": "500ml", "price_lkr": 400, "category": "spices", "emoji": "🫙"},
+    {"name": "Turmeric Powder", "unit": "50g", "price_lkr": 70, "category": "spices", "emoji": "🌿"},
+    {"name": "Chilli Powder", "unit": "100g", "price_lkr": 115, "category": "spices", "emoji": "🌶️"},
+    {"name": "Curry Powder", "unit": "100g", "price_lkr": 165, "category": "spices", "emoji": "🫙"},
+    {"name": "Salt", "unit": "1kg", "price_lkr": 70, "category": "spices", "emoji": "🧂"},
+    {"name": "Soy Sauce", "unit": "150ml", "price_lkr": 120, "category": "spices", "emoji": "🫙"},
+    {"name": "Maldive Fish (Umbalakada)", "unit": "100g", "price_lkr": 200, "category": "spices", "emoji": "🐟"},
+    {"name": "Pandan Leaves", "unit": "bundle", "price_lkr": 20, "category": "spices", "emoji": "🌿"},
+    {"name": "Lemongrass", "unit": "bundle", "price_lkr": 30, "category": "spices", "emoji": "🌿"},
+    {"name": "Goraka (Gamboge)", "unit": "50g", "price_lkr": 60, "category": "spices", "emoji": "🍋"}
+  ],
+  "dairy_other": [
+    {"name": "Milk Powder (Anchor)", "unit": "400g", "price_lkr": 520, "category": "dairy", "emoji": "🥛"},
+    {"name": "Yoghurt", "unit": "200ml", "price_lkr": 90, "category": "dairy", "emoji": "🫙"},
+    {"name": "Sugar", "unit": "1kg", "price_lkr": 180, "category": "other", "emoji": "🍬"},
+    {"name": "Tea Leaves", "unit": "100g", "price_lkr": 120, "category": "other", "emoji": "🍵"},
+    {"name": "Instant Noodles (Maggi)", "unit": "1 pack", "price_lkr": 90, "category": "other", "emoji": "🍜"}
+  ]
+}
