@@ -1,4 +1,4 @@
-# 🍛 RasaPlan | රිස බාසි
+# 🍛 RasaPlan | රස Plan
 ### The Broke Student Sri Lankan Meal Planner — AI Agent
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
