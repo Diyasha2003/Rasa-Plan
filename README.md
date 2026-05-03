@@ -242,4 +242,8 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
+## 🔗 Youtube Link
+
+https://youtube.com/shorts/2hMoHOJSKrs?feature=shared
+
 *Built with ❤️ and 🍛 for LB3114 Data Science Applications & AI · General Sir John Kotelawala Defence University · Intake 41*
